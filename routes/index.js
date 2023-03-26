@@ -34,10 +34,10 @@ router.post('/',
     [
         check('name')
         .isLength({ min: 1 })
-        .withMessage('!Error:Please enter a name'),
+        .withMessage('Please enter a name'),
         check('email')
         .isLength({ min: 1 })
-        .withMessage('!Error:Please enter an email'),
+        .withMessage('Please enter an email'),
     ],
     (req, res) => {
         //console.log(req.body);
